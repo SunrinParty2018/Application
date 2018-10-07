@@ -22,7 +22,6 @@ import de.blox.graphview.tree.BuchheimWalkerConfiguration;
 
 public class Tab_Graph extends android.support.v4.app.Fragment {
 
-    private int nodeCount = 1;
 
     @Nullable
     @Override

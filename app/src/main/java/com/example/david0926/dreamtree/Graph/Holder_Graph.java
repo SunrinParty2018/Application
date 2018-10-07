@@ -7,9 +7,10 @@ import com.example.david0926.dreamtree.R;
 
 public class Holder_Graph {
 
-    TextView graph_node;
+    TextView node_title, node_msg;
     Holder_Graph(View v) {
-        graph_node = v.findViewById(R.id.graph_node);
+        node_title = v.findViewById(R.id.node_title);
+        node_msg = v.findViewById(R.id.node_msg);
     }
 
 }
