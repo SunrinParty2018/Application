@@ -18,6 +18,8 @@
 
         <activity android:name=".Graph.GraphActivity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".Dialog_Parse"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
 
         <activity android:name=".IntroActivity"
             android:theme="@style/AppTheme.NoActionBar">

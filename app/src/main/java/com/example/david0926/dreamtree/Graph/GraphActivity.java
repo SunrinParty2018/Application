@@ -15,9 +15,6 @@ import android.widget.RelativeLayout;
 
 import com.example.david0926.dreamtree.R;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import de.blox.graphview.BaseGraphAdapter;
 import de.blox.graphview.Graph;
 import de.blox.graphview.GraphView;
@@ -42,25 +39,18 @@ public class GraphActivity extends AppCompatActivity{
 
         // example tree
         final Graph graph = new Graph();
-//        ArrayList<String> table = new ArrayList<>();
-//        ArrayList<String> connect = new ArrayList<>();
-//        table.add("");
-//        for(int i=0;i<10;i++){
-//            graph.addEdge(new Node(getNodeTitle()), new Node(getNodeTitle()));
-//        }
-
-        final Node node1 = new Node(getNodeTitle());
-        final Node node2 = new Node(getNodeTitle());
-        final Node node3 = new Node(getNodeTitle());
-        final Node node4 = new Node(getNodeTitle());
-        final Node node5 = new Node(getNodeTitle());
-        final Node node6 = new Node(getNodeTitle());
-        final Node node8 = new Node(getNodeTitle());
-        final Node node7 = new Node(getNodeTitle());
-        final Node node9 = new Node(getNodeTitle());
-        final Node node10 = new Node(getNodeTitle());
-        final Node node11 = new Node(getNodeTitle());
-        final Node node12 = new Node(getNodeTitle());
+        final Node node1 = new Node(getNodeText());
+        final Node node2 = new Node(getNodeText());
+        final Node node3 = new Node(getNodeText());
+        final Node node4 = new Node(getNodeText());
+        final Node node5 = new Node(getNodeText());
+        final Node node6 = new Node(getNodeText());
+        final Node node8 = new Node(getNodeText());
+        final Node node7 = new Node(getNodeText());
+        final Node node9 = new Node(getNodeText());
+        final Node node10 = new Node(getNodeText());
+        final Node node11 = new Node(getNodeText());
+        final Node node12 = new Node(getNodeText());
 
         graph.addEdge(node1, node2);
         graph.addEdge(node1, node3);
@@ -74,18 +64,21 @@ public class GraphActivity extends AppCompatActivity{
         graph.addEdge(node4, node11);
         graph.addEdge(node11, node12);
 
-        Adapter_Graph adapter = new Adapter_Graph(this, R.layout.graph_node, graph);
+
+        final BaseGraphAdapter<Holder_Graph> adapter = new BaseGraphAdapter<Holder_Graph>(this, R.layout.graph_node, graph) {
+            @NonNull
+            @Override
+            public Holder_Graph onCreateViewHolder(View view) {
+                return new Holder_Graph(view);
+            }
+
+            @Override
+            public void onBindViewHolder(Holder_Graph viewHolder, Object data, int position) {
+                viewHolder.node_title.setText(data.toString());
+            }
+        };
+
         graphView.setAdapter(adapter);
-
-        Model_Graph model = new Model_Graph();
-        model.setTitle("title");
-        model.setMsg("msg");
-        model.setNode(1);
-        model.setConnect(1);
-        adapter.addNode(model);
-
-
-
 
         // set the algorithm here
         final BuchheimWalkerConfiguration configuration = new BuchheimWalkerConfiguration.Builder()
@@ -120,11 +113,8 @@ public class GraphActivity extends AppCompatActivity{
         }
     }
 
-    private String getNodeTitle() {
+    private String getNodeText() {
         nodeCount++;
         return nodeCount+"단계 목표";
-    }
-    private String getNodeMsg() {
-        return nodeCount+"단계 메세지";
     }
 }
