@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.johnkil.print:print-1.2.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/print-1.2.2.aar/85ed5d25b5abfa2dad8f83d212fc3a37/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/print-1.2.2.aar/85ed5d25b5abfa2dad8f83d212fc3a37/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.johnkil.print/print/1.2.2/a73200bc91a62b34df0268831abe827bcbb772ec/print-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
