@@ -13,23 +13,10 @@
         android:background="@drawable/intro_gradient"
         android:id="@+id/parse_card">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="36dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="12dp"
-                >
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="36dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -51,16 +38,6 @@
                         />
 
                 </LinearLayout>
-
-
-
-            </RelativeLayout>
-
-
-
-
-
-        </RelativeLayout>
 
     </RelativeLayout>
 

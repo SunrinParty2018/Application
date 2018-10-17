@@ -32,15 +32,15 @@ public class MainActivity extends AppCompatActivity
 
         tabLayout.setSelectedTabIndicatorColor(Color.WHITE);
         View view1 = getLayoutInflater().inflate(R.layout.custom_tab, null);
-        view1.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_cafe);
+        view1.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_treegrow);
         tabLayout.addTab(tabLayout.newTab().setCustomView(view1));
 
         View view2 = getLayoutInflater().inflate(R.layout.custom_tab, null);
-        view2.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_log);
+        view2.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_graph);
         tabLayout.addTab(tabLayout.newTab().setCustomView(view2));
 
         View view3 = getLayoutInflater().inflate(R.layout.custom_tab, null);
-        view3.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_health);
+        view3.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_parse);
         tabLayout.addTab(tabLayout.newTab().setCustomView(view3));
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
@@ -132,17 +132,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_send) {
 
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
 
         }
 

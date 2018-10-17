@@ -22,7 +22,7 @@ public class Tab_TreeGrow extends android.support.v4.app.Fragment{
         final View v =  inflater.inflate(R.layout.tab_treegrow, container, false);
 
         ImageView imageView = v.findViewById(R.id.imageview_treegrow);
-        imageView.setImageResource(R.drawable.tree1);
+        imageView.setImageResource(R.drawable.tree5);
 
         final Button button = v.findViewById(R.id.btn_treegrow);
         button.setOnClickListener(new View.OnClickListener() {
