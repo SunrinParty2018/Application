@@ -6,4 +6,29 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="dialog_help">
+        DreamTree - 더 나은 내일을 위해\n
+        by 선린인터넷고등학교 3학년 영재학급 산출물 3조\n
+        \n
+        DreamTree는 꿈을 이루는 크고 작은 단계들을 그래프 형식으로 나타내고,\n
+        각각의 세부 단계들의 실천을 도와주며, 꿈이라는 최종 목표를 달성할 때까지\n
+        사용자와 함께할 인생 가이드 어플리케이션입니다.\n
+        \n
+        DreamTree 아이콘 라이선스\n
+        Icon made by [https://www.flaticon.com/authors/freepik] from www.flaticon.com\n
+
+    </string>
+    <string name="node1">첫번째노드 스무스</string>
+    <string name="node2">두번째노드 스무스</string>
+    <string name="node3">세번째노드 스무스</string>
+    <string name="node4">네번째노드 스무스</string>
+    <string name="node5">다섯번째노드 스무스</string>
+    <string name="node6">여섯번째노드 스무스</string>
+    <string name="node7">7번째노드 스무스</string>
+    <string name="node8">8번째노드 스무스</string>
+    <string name="node9">9번째노드 스무스</string>
+    <string name="node10">10번째노드 스무스</string>
+    <string name="node11">11번째노드 스무스</string>
+    <string name="node12">12번째노드 스무스</string>
+
 </resources>

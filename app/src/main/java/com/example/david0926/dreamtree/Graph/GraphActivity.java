@@ -15,6 +15,8 @@ import android.widget.RelativeLayout;
 
 import com.example.david0926.dreamtree.R;
 
+import java.util.ArrayList;
+
 import de.blox.graphview.BaseGraphAdapter;
 import de.blox.graphview.Graph;
 import de.blox.graphview.GraphView;
@@ -26,6 +28,7 @@ import pl.polidea.view.ZoomView;
 public class GraphActivity extends AppCompatActivity{
 
     private int nodeCount = 0;
+    ArrayList<String> NodeMsg = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,6 +39,20 @@ public class GraphActivity extends AppCompatActivity{
         GraphView graphView = findViewById(R.id.graph);
         graphView.setLineColor(Color.parseColor("#81C784"));
         graphView.setLineThickness(2);
+        NodeMsg.add(getString(R.string.node1));
+        NodeMsg.add(getString(R.string.node2));
+        NodeMsg.add(getString(R.string.node3));
+        NodeMsg.add(getString(R.string.node4));
+        NodeMsg.add(getString(R.string.node5));
+        NodeMsg.add(getString(R.string.node6));
+        NodeMsg.add(getString(R.string.node7));
+        NodeMsg.add(getString(R.string.node8));
+        NodeMsg.add(getString(R.string.node9));
+        NodeMsg.add(getString(R.string.node10));
+        NodeMsg.add(getString(R.string.node11));
+        NodeMsg.add(getString(R.string.node12));
+
+
 
         // example tree
         final Graph graph = new Graph();
@@ -74,7 +91,7 @@ public class GraphActivity extends AppCompatActivity{
 
             @Override
             public void onBindViewHolder(Holder_Graph viewHolder, Object data, int position) {
-                viewHolder.node_title.setText(data.toString());
+                viewHolder.node_msg.setText(data.toString());
             }
         };
 
@@ -115,6 +132,6 @@ public class GraphActivity extends AppCompatActivity{
 
     private String getNodeText() {
         nodeCount++;
-        return nodeCount+"단계 목표";
+        return NodeMsg.get(nodeCount);
     }
 }
