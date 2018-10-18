@@ -18,17 +18,17 @@
         Icon made by [https://www.flaticon.com/authors/freepik] from www.flaticon.com\n
 
     </string>
-    <string name="node1">첫번째노드 스무스</string>
-    <string name="node2">두번째노드 스무스</string>
-    <string name="node3">세번째노드 스무스</string>
-    <string name="node4">네번째노드 스무스</string>
-    <string name="node5">다섯번째노드 스무스</string>
-    <string name="node6">여섯번째노드 스무스</string>
-    <string name="node7">7번째노드 스무스</string>
-    <string name="node8">8번째노드 스무스</string>
-    <string name="node9">9번째노드 스무스</string>
-    <string name="node10">10번째노드 스무스</string>
-    <string name="node11">11번째노드 스무스</string>
-    <string name="node12">12번째노드 스무스</string>
+    <string name="node1">\n최종 목표, 나의 꿈입니다.\n</string>
+    <string name="node2">내 꿈을 이루기 위해 꼭 필요한 단계입니다.(1)</string>
+    <string name="node3">내 꿈을 이루기 위해 꼭 필요한 단계입니다.(2)</string>
+    <string name="node4">내 꿈을 이루기 위해 꼭 필요한 단계입니다.(3)</string>
+    <string name="node5">상위 단계를 달성하려면 어떤 과정이 필요할까요?(1)</string>
+    <string name="node6">상위 단계를 달성하려면 어떤 과정이 필요할까요?(2)</string>
+    <string name="node7">이 정도는 당장 실행에 옮길 수 있을 것 같아요!(2)</string>
+    <string name="node8">이 정도는 당장 실행에 옮길 수 있을 것 같아요!(1)</string>
+    <string name="node9">상위 단계를 달성하려면 어떤 과정이 필요할까요?(3)</string>
+    <string name="node10">상위 단계를 달성하려면 어떤 과정이 필요할까요?(4)</string>
+    <string name="node11">상위 단계를 달성하려면 어떤 과정이 필요할까요?(5)</string>
+    <string name="node12">이 정도는 당장 실행에 옮길 수 있을 것 같아요!(3)</string>
 
 </resources>

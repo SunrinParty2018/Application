@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Title"
+                android:text="나의 목표"
                 android:textSize="12sp"
                 android:id="@+id/node_title"
                 android:textColor="@android:color/black"

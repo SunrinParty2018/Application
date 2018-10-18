@@ -131,7 +131,6 @@ public class GraphActivity extends AppCompatActivity{
     }
 
     private String getNodeText() {
-        nodeCount++;
-        return NodeMsg.get(nodeCount);
+        return NodeMsg.get(nodeCount++);
     }
 }
