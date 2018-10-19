@@ -54,32 +54,30 @@ public class Tab_Parse extends android.support.v4.app.Fragment{
 
 
 
-
+        //example text
         wordList.add("처음에는, 당신이 원하는 곳으로 갈 수는 없겠지만, 당신이 지금 있는 곳에서 출발할 수는 있을 것이다.");
-        nameList.add("미상");
+        nameList.add("Unknown");
         wordList.add("새로운 목표를 세우거나, 새로운 삶의 꿈을 꾸기 위해, 결코 늦은 때란 존재하지 않는다.");
-        nameList.add("C. S. 루이스");
+        nameList.add("C. S. Lucis");
         wordList.add("천리 길도 한 걸음부터.");
         nameList.add("속담");
         wordList.add("당신이 두려워 하는 동굴 속에, 당신이 찾는 보물이 있다.");
-        nameList.add("조셉 캠벨");
+        nameList.add("Joseph Cambel");
         wordList.add("모든 것이 상실되고, 다시 시작해야 한다는 것을 감히 선언할 용기가 있다면, 당신은 잃어버릴 것이 없다.");
-        nameList.add("훌리오 코르타자르");
-        wordList.add("실패는 그저, 이번에는 더 지능적으로 다시 시작할 수 있는 기회일 뿐이다.");
-        nameList.add("헨리 포드");
-        wordList.add("아무도 과거로 돌아가서, 새로운 시작을 맞이할 수는 없지만, 누구나, 오늘 새로이 시작할 수 있고 새로운 결말을 만들 수는 있다.");
-        nameList.add("마리아 로빈슨");
-        wordList.add("끝까지 도달하는 것이 결말을 의미하지는 않는다. 여러 번, 나는 뭔가를 끝내는 것이, 단순히 새로운 길의 시작에 불과한 것인지, 스스로 궁금하다고 생각한다. 그리고 그 질문은, 나를 처음부터 다시 시작하도록 격려해준다.");
-        nameList.add("파블로 알보란");
-        wordList.add("지금으로부터 20년이 지난다면, 당신은 당신이 한 일보다는 ,당신이 하지 못한 일에 더 실망하게 될 것이다. 그러니, 기준점을 과감히 버려라. 안전한 항구에서 벗어나, 멀리멀리 항해하해보자. 당신의 항해에서, 무역풍을 잡아보자. 탐색하고, 꿈꾸고, 발견해보자.");
-        nameList.add("마크 트웨인");
-        wordList.add("야 기분 좋다.");
-        nameList.add("노무현");
+        nameList.add("Hulio Corzatar");
+        wordList.add("실패는 그저 더 지능적으로 다시 시작할 수 있는 기회일 뿐이다.");
+        nameList.add("Henry Ford");
+        wordList.add("아무도 과거로 돌아가서, 새로운 시작을 맞이할 수는 없지만, 누구나 오늘 새로이 시작할 수 있고 새로운 결말을 만들 수는 있다.");
+        nameList.add("Maria Robinson");
+        wordList.add("끝까지 도달하는 것이 결말을 의미하지는 않는다.");
+        nameList.add("Pablo Alboran");
+        wordList.add("지금으로부터 20년이 지난다면, 당신은 당신이 한 일보다는 ,당신이 하지 못한 일에 더 실망하게 될 것이다.");
+        nameList.add("Mark Twain");
 
 
         RecycleModel_Parse model;
 
-        for(int i=0;i<10;i++) {
+        for(int i=0;i<9;i++) {
             JsoupAs jsoupas = new JsoupAs();
             jsoupas.execute();
             model = new RecycleModel_Parse();
