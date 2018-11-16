@@ -16,6 +16,11 @@ public class Tab_TreeGrow extends android.support.v4.app.Fragment{
 
     private int i=0;
 
+    public static Tab_TreeGrow newInstance(){
+        Tab_TreeGrow fragment = new Tab_TreeGrow();
+        return fragment;
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable final ViewGroup container, Bundle savedInstanceState) {

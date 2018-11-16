@@ -25,6 +25,10 @@ import de.blox.graphview.tree.BuchheimWalkerConfiguration;
 
 public class Tab_Graph extends android.support.v4.app.Fragment {
 
+    public static Tab_Graph newInstance(){
+        Tab_Graph fragment = new Tab_Graph();
+        return fragment;
+    }
 
     @Nullable
     @Override

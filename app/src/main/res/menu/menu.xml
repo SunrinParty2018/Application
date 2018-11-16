@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:id="@+id/action_1"
+        android:title="나의 드림트리"
+        android:icon="@drawable/icon_treegrow" />
+    <item android:id="@+id/action_2"
+        android:title="트리 그래프"
+        android:icon="@drawable/icon_graph" />
+    <item android:id="@+id/action_3"
+        android:title="명언"
+        android:icon="@drawable/icon_parse" />
+
+</menu>

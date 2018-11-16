@@ -27,6 +27,11 @@ import java.util.List;
 
 public class Tab_Parse extends android.support.v4.app.Fragment{
 
+    public static Tab_Parse newInstance(){
+        Tab_Parse fragment = new Tab_Parse();
+        return fragment;
+    }
+
     RecyclerView rcv;
     RecycleAdapter_Parse rcvAdap;
     ArrayList<String> wordList = new ArrayList<String>();

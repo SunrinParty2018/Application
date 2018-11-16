@@ -2,10 +2,14 @@ package com.example.david0926.dreamtree;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -16,6 +20,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.david0926.dreamtree.Graph.Tab_Graph;
+import com.example.david0926.dreamtree.Parse.Tab_Parse;
+import com.example.david0926.dreamtree.TreeGrow.Tab_TreeGrow;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,45 +37,33 @@ public class MainActivity extends AppCompatActivity
         toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
 
-        TabLayout tabLayout = findViewById(R.id.tabLayout);
-
-        tabLayout.setSelectedTabIndicatorColor(Color.WHITE);
-        View view1 = getLayoutInflater().inflate(R.layout.custom_tab, null);
-        view1.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_treegrow);
-        tabLayout.addTab(tabLayout.newTab().setCustomView(view1));
-
-        View view2 = getLayoutInflater().inflate(R.layout.custom_tab, null);
-        view2.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_graph);
-        tabLayout.addTab(tabLayout.newTab().setCustomView(view2));
-
-        View view3 = getLayoutInflater().inflate(R.layout.custom_tab, null);
-        view3.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_parse);
-        tabLayout.addTab(tabLayout.newTab().setCustomView(view3));
-
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
-        final ViewPager viewPager = findViewById(R.id.pager);
-        final TabAdapter adapter = new TabAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
-
-        viewPager.setAdapter(adapter);
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottombar);
+        bottomNavigationView.setItemBackgroundResource(R.color.colorWhite);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment selectedFragment = null;
+                switch (item.getItemId()) {
+                    case R.id.action_1:
+                        selectedFragment = Tab_TreeGrow.newInstance();
+                        break;
+                    case R.id.action_2:
+                        selectedFragment = Tab_Graph.newInstance();
+                        break;
+                    case R.id.action_3:
+                        selectedFragment = Tab_Parse.newInstance();
+                        break;
+                }
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frame_layout, selectedFragment);
+                transaction.commit();
+                return true;
             }
         });
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, Tab_TreeGrow.newInstance());
+        transaction.commit();
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
