@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.example.david0926.dreamtree.R;
 import com.unnamed.b.atv.model.TreeNode;
@@ -34,6 +35,15 @@ public class Tab_Graph extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         final View v = inflater.inflate(R.layout.tab_graph, container, false);
+
+        LinearLayout newNodeBtn = v.findViewById(R.id.btn_newnode);
+
+        newNodeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), GraphEditActivity.class));
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) v.findViewById(R.id.fab_graph);
         fab.setOnClickListener(new View.OnClickListener() {

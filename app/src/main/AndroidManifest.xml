@@ -16,6 +16,8 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity android:name=".Graph.GraphEditActivity" />
+
         <activity android:name=".Graph.GraphActivity"
             android:screenOrientation="landscape"/>
         <activity android:name=".Dialog_Parse"

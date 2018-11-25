@@ -31,7 +31,6 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
                         android:orientation="vertical">
 
                         <LinearLayout
@@ -65,8 +64,10 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:layout_margin="4dp"
                             android:gravity="center_vertical"
+                            android:id="@+id/btn_newnode"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -114,7 +115,7 @@
                             android:background="#eeeeee" />
 
                         <TextView
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="8dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Android Realtime Chat 구현하기"
